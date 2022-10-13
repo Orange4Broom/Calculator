@@ -1,0 +1,132 @@
+:root {
+    font-family: 'KoHo', sans-serif;
+    color: #EFF0D1;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(back.jpg);
+    /*background-color: #333333;*/
+  }
+
+  .back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.700);
+  }
+  
+  .calc-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 566px;
+    width: 455px;
+    background-color: grey;
+  }
+  
+  .calc-display {
+    margin-bottom: 20px;
+    height: 120px;
+    width: 415px;
+    font-size: 38px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #262730;
+  }
+  
+  #write {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    height: 60px;
+    width: 415px;
+    cursor: default;
+  }
+  
+  #result {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    height: 60px;
+    width: 415px;
+    cursor: default;
+  } 
+  
+  .calc-buttons {
+    height: 390px;
+    width: 415px;
+  }
+  
+  button {
+    font-size: 32px;
+    color: #EFF0D1;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    background-color: #364958;
+    cursor: pointer;
+  }
+  
+  .delete {
+    height: 70px;
+    width: 205px;
+    background-color: #3B6064;
+  }
+  
+  .delete:hover {
+    background-color: #32595E;
+  }
+  
+  .delete:active {
+    height: 65px;
+    width: 200px;
+    background-color: #254C51;
+  }
+  
+  .box {
+    height: 70px;
+    width: 100px;
+  }
+  
+  .box:hover {
+    background-color: #273E50;
+  }
+  
+  .box:active {
+    height: 65px;
+    width: 95px;
+    background-color: #1C384F;
+  }
+  
+  .equals {
+    font-size: 50px;
+    height: 70px;
+    width: 205px;
+    background-color: #3B6064;
+  }
+  
+  .equals:hover {
+    background-color: #32595E;
+  }
+  
+  .equals:active {
+    height: 65px;
+    width: 200px;
+    background-color: #254C51;
+  }

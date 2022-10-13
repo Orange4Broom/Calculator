@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="back">
+
+    <div class="calc-body">
+  
+        <div class="calc-display">
+          <div id="write"></div>
+          <div id="result">0</div>
+        </div>
+        
+          <table class="calc-buttons">
+            
+            <tr>
+              <td colspan="2"><button id="delete" class="delete">DELETE</button></td>
+              <td><button id="ac" class="box ac">AC</button></td>
+              <td><button id="devided" class="box divided" value="/">÷</button></td>
+            </tr>
+            
+            <tr>
+              <td><button id="seven" class="box seven" value="7">7</button></td>
+              <td><button id="eight" class="box eight" value="8">8</button></td>
+              <td><button id="nine" class="box nine" value="9">9</button></td>
+              <td><button id="multipli" class="box multipli" value="*">*</button></td>
+            </tr>
+            
+            <tr>
+              <td><button id="four" class="box four" value="4">4</button></td>
+              <td><button id="five" class="box five" value="5">5</button></td>
+              <td><button id="six" class="box six" value="6">6</button></td>
+              <td><button id="plus" class="box plus" value="+">+</button></td>
+            </tr>
+            
+            <tr>
+              <td><button id="one" class="box one" value="1">1</button></td>
+              <td><button id="two" class="box two" value="2">2</button></td>
+              <td><button id="three" class="box three" value="3">3</button></td>
+              <td><button id="minus" class="box minus" value="-">-</button></td>
+            </tr>
+            
+            <tr>
+              <td><button id="zero" class="box zero" value="0">0</button></td>
+              <td><button id="comma" class="box comma" value=".">,</button></td>
+              <td colspan="2"><button id="equals" class="equals">=</button></td>
+            </tr>
+            
+          </table>
+        
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>  
+</body>
+</html>
