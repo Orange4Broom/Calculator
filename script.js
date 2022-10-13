@@ -1,3 +1,4 @@
+//Numbers-------------------------------------------
 const buttonZero = document.getElementById('zero');
 const buttonOne = document.getElementById('one');
 const buttonTwo = document.getElementById('two');
@@ -11,20 +12,26 @@ const buttonNine = document.getElementById('nine');
 
 const buttonComma = document.getElementById('comma');
 
+//Operations----------------------------------------------
 const buttoonEquals = document.getElementById('equals');
 const buttonPlus = document.getElementById('plus');
 const buttonMinus = document.getElementById('minus');
 const buttonMulti = document.getElementById('multipli');
 const buttonDevided = document.getElementById('devided');
 
+//Delete/AC---------------------------------------------
 const buttonAc = document.getElementById('ac');
 const buttonDelete = document.getElementById('delete');
 
+
+//Write numbers and result
 let write = document.getElementById('write');
 let writeResult = document.getElementById('result');
 
-
+//Result
 let result = '';
+
+//Numbers-----------------------------------------------------------
 
 buttonZero.onclick = function() {
     console.log(buttonZero.value);
@@ -118,6 +125,19 @@ buttonDevided.onclick = function() {
     write.innerHTML = result;
 }
 
+buttoonEquals.onclick = function() {
+    console.log(eval(result));
+
+    if (result != "") {
+      writeResult.innerHTML = "= " + eval(result);  
+    }
+    else {
+        writeResult.innerHTML = 0;
+    }
+    
+}
+
+//Delete/AC-----------------------------------------------------------
 
 buttonAc.onclick = function() {
     console.log('Hit the ac button')
@@ -130,16 +150,4 @@ buttonDelete.onclick = function() {
     console.log('Hit the delete button')
     result = result.slice(0, -1);
     write.innerHTML = result;
-}
-
-buttoonEquals.onclick = function() {
-    console.log(eval(result));
-
-    if (result != "") {
-      writeResult.innerHTML = "= " + eval(result);  
-    }
-    else {
-        writeResult.innerHTML = 0;
-    }
-    
 }
