@@ -13,7 +13,7 @@ const buttonNine = document.getElementById('nine');
 const buttonComma = document.getElementById('comma');
 
 //Operations----------------------------------------------
-const buttoonEquals = document.getElementById('equals');
+const buttonEquals = document.getElementById('equals');
 const buttonPlus = document.getElementById('plus');
 const buttonMinus = document.getElementById('minus');
 const buttonMulti = document.getElementById('multipli');
@@ -30,6 +30,8 @@ let writeResult = document.getElementById('result');
 
 //Result
 let result = '';
+const pattern = /^[0-9,]*$/g;
+
 
 //Numbers-----------------------------------------------------------
 
@@ -125,11 +127,16 @@ buttonDevided.onclick = function() {
     write.innerHTML = result;
 }
 
-buttoonEquals.onclick = function() {
+buttonEquals.onclick = function() {
     console.log(eval(result));
+    let evalResult = eval(result);
+    let test = pattern.test(evalResult);
 
-    if (result != "") {
-      writeResult.innerHTML = "= " + eval(result);  
+    if (result) {
+        if (!test) {
+           evalResult = Number(evalResult).toFixed(8);
+        }
+        writeResult.innerHTML = "= " + evalResult;
     }
     else {
         writeResult.innerHTML = 0;
