@@ -5,66 +5,103 @@
   
   body {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     height: 100vh;
     width: 100%;
+
     overflow: hidden;
+
     background-image: url(back.jpg);
-    /*background-color: #333333;*/
   }
+
+/*-------Background-------*/
 
   .back {
     position: absolute;
+
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     height: 100vh;
     width: 100%;
+
     top: 0;
     left: 0;
+
     overflow: hidden;
+
     background-color: rgba(0, 0, 0, 0.700);
   }
+
+/*-------Calculator body-------*/
   
   .calc-body {
     display: flex;
+
+    flex-direction: column;
+
+
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+
     border-radius: 5px;
+
     height: 566px;
     width: 455px;
+
     background-color: grey;
   }
+
+/*-------Result display-------*/
   
   .calc-display {
-    margin-bottom: 20px;
     height: 120px;
     width: 415px;
+
+    margin-bottom: 20px;
+
     font-size: 38px;
     font-weight: 500;
+
     border-radius: 5px;
+
     background-color: #262730;
   }
+
+/*-------Writing numbers-------*/
   
   #write {
     display: flex;
+
     justify-content: flex-start;
     align-items: center;
-    padding-left: 10px;
+
     height: 60px;
     width: 415px;
+
+    padding-left: 10px;
+
     cursor: default;
   }
   
+/*-------Printing result-------*/
+
   #result {
     display: flex;
+
     justify-content: flex-start;
     align-items: center;
-    padding-left: 10px;
+
     height: 60px;
     width: 415px;
+
+    padding-left: 10px;
+
     cursor: default;
   } 
   
@@ -75,17 +112,24 @@
   
   button {
     font-size: 32px;
-    color: #EFF0D1;
     font-weight: 300;
+
     border: none;
     border-radius: 5px;
-    background-color: #364958;
+
     cursor: pointer;
+
+    color: #EFF0D1;
+    background-color: #364958;
+    
   }
-  
+
+/*-------Delete Button-------*/
+
   .delete {
     height: 70px;
     width: 205px;
+
     background-color: #3B6064;
   }
   
@@ -96,8 +140,11 @@
   .delete:active {
     height: 65px;
     width: 200px;
+
     background-color: #254C51;
   }
+
+/*-------Normal Button-------*/
   
   .box {
     height: 70px;
@@ -111,13 +158,18 @@
   .box:active {
     height: 65px;
     width: 95px;
+
     background-color: #1C384F;
   }
+
+/*-------Equals Button-------*/
   
   .equals {
-    font-size: 50px;
     height: 70px;
     width: 205px;
+
+    font-size: 50px;
+
     background-color: #3B6064;
   }
   
@@ -128,5 +180,6 @@
   .equals:active {
     height: 65px;
     width: 200px;
+
     background-color: #254C51;
   }
