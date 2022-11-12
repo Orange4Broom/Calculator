@@ -16,7 +16,7 @@
 
     overflow: hidden;
 
-    background-image: url(back.jpg);
+    background-color: #2586c7;
   }
 
 /*-------Background-------*/
@@ -57,6 +57,7 @@
     width: 455px;
 
     background-color: grey;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.35);
   }
 
 /*-------Result display-------*/
@@ -123,6 +124,7 @@
 
     color: #EFF0D1;
     background-color: #364958;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.65);
     
   }
 
